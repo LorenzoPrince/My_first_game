@@ -9,6 +9,7 @@ public class MoveObjets : MonoBehaviour
 
     public Vector3 NewPosition;
     public float speed;
+    public Vector3 imputVector;
     void Start()
     {
         Debug.Log("El juego a comenzado");
@@ -19,9 +20,16 @@ public class MoveObjets : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        imputVector.x = Input.GetAxis("Horizontal");
+        imputVector.y = Input.GetAxis("Vertical");
+        transform.Translate(imputVector.x * speed, 0f, imputVector.y * speed);
         Debug.Log("El juego se esta ejecutando");
 
-        if (Input.GetKeyDown(KeyCode.P))
+
+      
+
+        /*if (Input.GetKeyDown(KeyCode.P))
         
         {
             Debug.Log("Touch P");
@@ -55,6 +63,6 @@ public class MoveObjets : MonoBehaviour
             Debug.Log("press d");
             transform.Translate(speed, 0f, 0f);
         }
-
+        */
     }
 }
