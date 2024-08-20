@@ -13,7 +13,7 @@ public class MoveObjets : MonoBehaviour
     void Start()
     {
         Debug.Log("El juego a comenzado");
-
+        
 
     }
 
