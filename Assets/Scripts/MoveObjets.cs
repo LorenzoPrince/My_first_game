@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class MoveObjets : MonoBehaviour
@@ -7,6 +8,7 @@ public class MoveObjets : MonoBehaviour
     // Start is called before the first frame update
 
     public Vector3 NewPosition;
+    public float speed;
     void Start()
     {
         Debug.Log("El juego a comenzado");
@@ -19,13 +21,40 @@ public class MoveObjets : MonoBehaviour
     {
         Debug.Log("El juego se esta ejecutando");
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.P))
         
         {
-            Debug.Log("Touch w");
+            Debug.Log("Touch P");
             transform.position = NewPosition;
         } 
+        if (Input.GetKey (KeyCode.W)) 
 
+        {
+
+            Debug.Log("press w");
+            transform.Translate(0f, 0f ,speed );
+        }
+        if (Input.GetKey(KeyCode.S))
+
+        {
+
+            Debug.Log("press s");
+            transform.Translate(0f, 0f, -speed);
+        }
+        if (Input.GetKey(KeyCode.A))
+
+        {
+
+            Debug.Log("press s");
+            transform.Translate(-speed, 0f, 0f);
+        }
+        if (Input.GetKey(KeyCode.D))
+
+        {
+
+            Debug.Log("press d");
+            transform.Translate(speed, 0f, 0f);
+        }
 
     }
 }
