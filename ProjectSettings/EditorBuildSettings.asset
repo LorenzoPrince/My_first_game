@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Git.unity
     guid: 89922b65a878db94ca71311f02a6a48a
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: cd39c72567659344cb20fec8e66759e8
   m_configObjects: {}

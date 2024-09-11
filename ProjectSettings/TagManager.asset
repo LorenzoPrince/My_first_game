@@ -7,6 +7,7 @@ TagManager:
   - pizo
   - KillZone
   - Gold
+  - Point
   layers:
   - Default
   - TransparentFX

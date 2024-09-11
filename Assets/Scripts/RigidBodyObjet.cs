@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class RigidBodyMut : MonoBehaviour  
 
@@ -13,6 +14,10 @@ public class RigidBodyMut : MonoBehaviour
     public Rigidbody rigidBody;
     public bool isGrounded;
     public Collision contraLoQueChoque;
+
+    public int collectedItems;
+
+    public TMPro.TextMeshProUGUI scoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +59,16 @@ public class RigidBodyMut : MonoBehaviour
 
             SceneManager.LoadScene(0);
 
+        }
+        if (contraLoQueChoque.gameObject.CompareTag("Gold"))
+        {
+            SceneManager.LoadScene(1);
+        }
+        if(contraLoQueChoque.gameObject.CompareTag("Point"))
+        {
+            Destroy(contraLoQueChoque.gameObject);
+            collectedItems++;
+            scoreText.text = collectedItems.ToString();
         }
     }
 }
