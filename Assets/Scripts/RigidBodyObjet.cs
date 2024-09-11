@@ -15,17 +15,29 @@ public class RigidBodyMut : MonoBehaviour
     public bool isGrounded;
     public Collision contraLoQueChoque;
 
+    public GameObject goal;
+
     public int collectedItems;
+    public int totalItems;
 
     public TMPro.TextMeshProUGUI scoreText;
 
     // Start is called before the first frame update
     void Start()
     {
+        totalItems = GameObject.FindGameObjectsWithTag("Point").Length;
+
         rigidBody = GetComponent<Rigidbody>();
         isGrounded = true;
 
+        UpdateScore();
 
+    }
+
+    private void UpdateScore()
+    {
+        // Update score in screen
+        scoreText.text = collectedItems + " / " + totalItems;
     }
 
     // Update is called once per frame
@@ -62,13 +74,37 @@ public class RigidBodyMut : MonoBehaviour
         }
         if (contraLoQueChoque.gameObject.CompareTag("Gold"))
         {
-            SceneManager.LoadScene(1);
+                victory();
         }
-        if(contraLoQueChoque.gameObject.CompareTag("Point"))
+
+    }
+
+    private void collectionItem(Collider contraLoQueChoque)
+    {
+        Destroy(contraLoQueChoque.gameObject);
+        collectedItems++;
+        UpdateScore();
+
+        if (collectedItems == totalItems)
         {
-            Destroy(contraLoQueChoque.gameObject);
-            collectedItems++;
-            scoreText.text = collectedItems.ToString();
+            victory();
         }
+    }
+
+    private static void victory()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("tocando el objeto" + other.gameObject.name);
+
+        if (other.gameObject.CompareTag("Point"))
+        {
+            collectionItem(other);
+
+        }
+        
     }
 }
