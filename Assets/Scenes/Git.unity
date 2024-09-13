@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 116334455}
   m_Layer: 0
   m_Name: Cylinder (4)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -873,7 +873,7 @@ GameObject:
   - component: {fileID: 142383742}
   m_Layer: 0
   m_Name: s (1)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 203675590}
   m_Layer: 0
   m_Name: Capsule (2)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1502,7 +1502,7 @@ GameObject:
   - component: {fileID: 253559940}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1607,7 +1607,7 @@ GameObject:
   - component: {fileID: 254843215}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1712,7 +1712,7 @@ GameObject:
   - component: {fileID: 280539509}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3503,7 +3503,7 @@ GameObject:
   - component: {fileID: 687521923}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3610,7 +3610,7 @@ GameObject:
   - component: {fileID: 695901503}
   m_Layer: 0
   m_Name: Capsule (3)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4628,11 +4628,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1133525428965047322, guid: 30fb8c1a125e5fa44be619a6c6aa8b39, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.52
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 1133525428965047322, guid: 30fb8c1a125e5fa44be619a6c6aa8b39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.25
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1133525428965047322, guid: 30fb8c1a125e5fa44be619a6c6aa8b39, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5615,7 +5615,7 @@ GameObject:
   - component: {fileID: 1071658764}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5853,7 +5853,7 @@ GameObject:
   - component: {fileID: 1163556753}
   m_Layer: 0
   m_Name: s
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5958,7 +5958,7 @@ GameObject:
   - component: {fileID: 1192973143}
   m_Layer: 0
   m_Name: Cylinder (6)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6485,7 +6485,7 @@ GameObject:
   - component: {fileID: 1383203536}
   m_Layer: 0
   m_Name: s (6)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6695,7 +6695,7 @@ GameObject:
   - component: {fileID: 1427385295}
   m_Layer: 0
   m_Name: Cylinder (7)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8780,7 +8780,7 @@ GameObject:
   - component: {fileID: 1790619171}
   m_Layer: 0
   m_Name: Capsule (1)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8887,7 +8887,7 @@ GameObject:
   - component: {fileID: 1798815728}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9414,7 +9414,7 @@ GameObject:
   - component: {fileID: 1875731154}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9970,7 +9970,7 @@ GameObject:
   - component: {fileID: 1926307391}
   m_Layer: 0
   m_Name: Cylinder (3)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10315,7 +10315,7 @@ GameObject:
   - component: {fileID: 2020552234}
   m_Layer: 0
   m_Name: Cylinder (5)
-  m_TagString: Untagged
+  m_TagString: pizo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

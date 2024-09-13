@@ -72,6 +72,21 @@ public class RigidBodyMut : MonoBehaviour
             SceneManager.LoadScene(0);
 
         }
+        if (contraLoQueChoque.gameObject.CompareTag("Dead"))
+
+        {
+            Debug.Log("Dead");
+            if (SceneManager.GetActiveScene().name == "Level1")
+            {
+                NextLevel();
+            }
+            if (SceneManager.GetActiveScene().name == "Level2")
+            {
+                NextLevel1();
+            }
+
+
+        }
         if (contraLoQueChoque.gameObject.CompareTag("Gold"))
         {
                 victory();
@@ -87,7 +102,18 @@ public class RigidBodyMut : MonoBehaviour
 
         if (collectedItems == totalItems)
         {
-            victory();
+
+                if (SceneManager.GetActiveScene().name == "Level1")
+                {
+                    NextLevel1();
+                }
+                if (SceneManager.GetActiveScene().name == "Level2")
+                {
+                    victory();
+                }
+
+          
+          
         }
     }
 
@@ -107,4 +133,19 @@ public class RigidBodyMut : MonoBehaviour
         }
         
     }
+    void NextLevel1()
+
+    {
+        SceneManager.LoadScene("level2");
+
+
+    }
+    void NextLevel()
+
+    {
+        SceneManager.LoadScene("level1");
+
+
+    }
+
 }

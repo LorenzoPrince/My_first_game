@@ -18,6 +18,11 @@ public class menucontroller : MonoBehaviour
     }
     public void PlayAgain()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Level1");
     }
+    public void SecretLevel()
+    {
+        SceneManager.LoadScene("Git");
+    }
+
 }
