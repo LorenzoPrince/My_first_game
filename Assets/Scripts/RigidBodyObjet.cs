@@ -119,7 +119,7 @@ public class RigidBodyMut : MonoBehaviour
 
     private static void victory()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Victory");
     }
 
     private void OnTriggerEnter(Collider other)
